@@ -23,3 +23,9 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+    
+    - name: 'Run Azure webapp deploy action using publish profile credentials'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: githubtestapp
+        publish-profile: ${{ secrets.AZUREWEBAPPPUBLISHPROFILE }}
