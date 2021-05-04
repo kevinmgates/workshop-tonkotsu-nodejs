@@ -42,4 +42,4 @@ npm start
 
 Follow the coach instructions and good luck!
 
-Hi again for issue #14
+Hi, it's hammer time
